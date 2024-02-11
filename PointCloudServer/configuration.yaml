@@ -1,0 +1,7 @@
+cache:
+    internal:
+        buffer_size: 512
+    redis:
+        host: 127.0.0.1
+        port: 6379
+    use: internal

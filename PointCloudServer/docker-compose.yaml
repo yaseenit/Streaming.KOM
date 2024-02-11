@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  pointcloudserver:
+    build: .
+    volumes:
+      - "./media:/app/media"
+    ports:
+      - "8080:8080"
+    networks:
+      - tc
+    cap_add:
+    - NET_ADMIN
+networks:
+  tc:
